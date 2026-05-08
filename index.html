@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métis Homeland Map V5</title>
+    
+    <!-- Leaflet CSS (local for file:// compatibility) -->
+    <link rel="stylesheet" href="lib/leaflet.css"/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="map-overlay">
+        <h1>Métis Homeland Map</h1>
+        <p>Interactive map showing waterways, cart trails, and historical settlements</p>
+        <div class="legend">
+            <h3>Legend</h3>
+            <div class="legend-item">
+                <span class="legend-color waterway"></span>
+                <span>Waterways</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color trail"></span>
+                <span>Cart Trails</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color location"></span>
+                <span>Locations & Settlements</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Leaflet JS (local for file:// compatibility) -->
+    <script src="lib/leaflet.js"></script>
+    
+    <!-- Embedded Data -->
+    <script src="js/data.js"></script>
+    
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

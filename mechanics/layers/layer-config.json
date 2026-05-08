@@ -1,0 +1,51 @@
+{
+  "waterways": {
+    "color": "#4a90d9",
+    "weight": 3,
+    "opacity": 0.7,
+    "popupTemplate": "{name} — {type}"
+  },
+  "cart-trails": {
+    "color": "#c0392b",
+    "weight": 2,
+    "opacity": 0.8,
+    "dashArray": "8, 6",
+    "popupTemplate": "{name} ({description})"
+  },
+  "locations": {
+    "markerColor": "#27ae60",
+    "markerRadius": 6,
+    "popupFields": ["name", "description", "founded", "communityType"],
+    "byType": {
+      "HBC Fort":    { "markerColor": "#8e44ad", "markerSymbol": "🏰" },
+      "Trading Post": { "markerColor": "#d35400", "markerSymbol": "🏪" },
+      "Métis Community": { "markerColor": "#27ae60", "markerSymbol": "⛺" },
+      "Settlement":  { "markerColor": "#f39c12", "markerSymbol": "📍" }
+    }
+  },
+  "tileProviders": [
+    {
+      "name": "CartoDB Light",
+      "url": "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+      "attribution": "&copy; CARTO",
+      "maxZoom": 19,
+      "subdomains": "abcd"
+    },
+    {
+      "name": "CartoDB Dark",
+      "url": "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+      "attribution": "&copy; CARTO",
+      "maxZoom": 19,
+      "subdomains": "abcd"
+    },
+    {
+      "name": "OpenStreetMap",
+      "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "attribution": "&copy; OpenStreetMap",
+      "maxZoom": 19,
+      "subdomains": "abc"
+    }
+  ],
+  "defaultCenter": [50.0, -100.0],
+  "defaultZoom": 6
+}

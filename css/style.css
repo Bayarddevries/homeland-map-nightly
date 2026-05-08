@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    max-width: 280px;
+}
+
+.map-overlay h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.map-overlay p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.legend {
+    margin-top: 10px;
+}
+
+.legend h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 3px;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+
+.legend-color.waterway {
+    background-color: #3498db;
+}
+
+.legend-color.trail {
+    background-color: #e74c3c;
+}
+
+.legend-color.location {
+    background-color: #27ae60;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+/* Custom popup styling */
+.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.leaflet-popup-content {
+    margin: 12px;
+    line-height: 1.5;
+}
+
+.popup-title {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.popup-description {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.popup-meta {
+    font-size: 12px;
+    color: #888;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+}
+
+/* Layer control styling */
+.leaflet-control-layers {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .map-overlay {
+        top: auto;
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+}
